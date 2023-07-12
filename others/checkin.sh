@@ -1,0 +1,17 @@
+curl 'https://glados.network/api/user/checkin' \
+  -H 'authority: glados.network' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: zh-CN,zh;q=0.9,en;q=0.8' \
+  -H 'authorization: 634716697482871854094007969047-900-1440' \
+  -H 'content-type: application/json;charset=UTF-8' \
+  -H 'cookie: _gid=GA1.2.350175950.1684803558; _gat_gtag_UA_104464600_2=1; koa:sess=eyJ1c2VySWQiOjE3MzgxNCwiX2V4cGlyZSI6MTcxMDcyMzU4NDkzMSwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=fI1qhDLsWcbdZ_atY0CTGh-qV0g; _ga=GA1.1.401523973.1684803558; _ga_CZFVKMNT9J=GS1.1.1684803558.1.1.1684803600.0.0.0' \
+  -H 'origin: https://glados.network' \
+  -H 'sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36' \
+  --data-raw '{"token":"glados.network"}' \
+  --compressed
