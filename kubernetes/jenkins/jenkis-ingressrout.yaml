@@ -1,0 +1,17 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: jenkins
+  namespace: kube-ops
+spec:
+  entryPoints:
+  - websecure
+  - web
+  tls:
+    secretName: biloop.cn-tls
+  routes:
+  - match: Host(`deploy.biloop.cn`)
+    kind: Rule
+    services:
+    - name: jenkins
+      port: 8080

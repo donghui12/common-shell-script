@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: jenkis-ingress
+  namespace: kube-ops
+  annotations:
+    kubernetes.io/ingress.class: traefik            
+    traefik.ingress.kubernetes.io/router.entrypoints: web
+spec:
+  rules:
+  - host: deploy.yueheli.cn                              
+    http:
+      paths:
+      - path: /              
+        backend:
+          serviceName: jenkins
+          servicePort: 8080
