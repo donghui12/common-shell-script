@@ -1,0 +1,5 @@
+# 本地运行数据（alist 配置 + 内嵌数据库，含账号信息）
+docker/compose/alist/data/
+
+# 业务激活码（真实 UUID，不进公开仓库）
+active_code.txt
